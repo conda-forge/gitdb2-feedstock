@@ -14,9 +14,7 @@ Summary: A pure-Python git object database
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gitdb2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gitdb2-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gitdb2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gitdb2-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gitdb2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gitdb2-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gitdb2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gitdb2-feedstock)
 
 Current release info
 ====================
