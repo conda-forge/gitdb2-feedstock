@@ -1,5 +1,4 @@
-{% set version = "2.0.2" %}
-{% set sha256 = "f2e36d7561e91f30a6a44858756dc020d8f1e81ca6e4185979d5c6c24c648070" %}
+{% set version = "2.0.3" %}
 
 package:
   name: gitdb2
@@ -8,17 +7,17 @@ package:
 source:
   fn: gitdb2-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/gitdb2/gitdb2-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: b60e29d4533e5e25bb50b7678bbc187c8f6bcff1344b4f293b2ba55c85795f09
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - smmap2
