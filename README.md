@@ -14,12 +14,15 @@ Summary: A pure-Python git object database
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gitdb2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gitdb2-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/gitdb2-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/gitdb2-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitdb2/badges/version.svg)](https://anaconda.org/conda-forge/gitdb2)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitdb2/badges/downloads.svg)](https://anaconda.org/conda-forge/gitdb2)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gitdb2-green.svg)](https://anaconda.org/conda-forge/gitdb2) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gitdb2.svg)](https://anaconda.org/conda-forge/gitdb2) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gitdb2.svg)](https://anaconda.org/conda-forge/gitdb2) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gitdb2.svg)](https://anaconda.org/conda-forge/gitdb2) |
 
 Installing gitdb2
 =================
