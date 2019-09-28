@@ -1,4 +1,4 @@
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 
 package:
   name: gitdb2
@@ -7,12 +7,12 @@ package:
 source:
   fn: gitdb2-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/gitdb2/gitdb2-{{ version }}.tar.gz
-  sha256: 83361131a1836661a155172932a13c08bda2db3674e4caa32368aa6eb02f38c2
+  sha256: 1b6df1433567a51a4a9c1a5a0de977aa351a405cc56d7d35f3388bad1f630350
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
