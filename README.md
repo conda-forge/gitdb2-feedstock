@@ -3,7 +3,7 @@ About gitdb2
 
 Home: https://github.com/gitpython-developers/gitdb
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
