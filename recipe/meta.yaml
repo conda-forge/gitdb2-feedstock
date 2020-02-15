@@ -1,35 +1,37 @@
-{% set version = "2.0.6" %}
+{% set version = "3.0.0" %}
 
 package:
   name: gitdb2
   version: {{ version }}
 
 source:
-  fn: gitdb2-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/gitdb2/gitdb2-{{ version }}.tar.gz
-  sha256: 1b6df1433567a51a4a9c1a5a0de977aa351a405cc56d7d35f3388bad1f630350
+  sha256: 51380b9d8b977b42ac9fc3a8e17af90a56ffc573ca9c6b79f99033b04f29f457
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.4
     - pip
+    - smmap2 >=2.0.0
   run:
-    - python
-    - smmap2
+    - python >=3.4
+    - smmap2 >=2.0.0
 
 test:
   imports:
     - gitdb
     - gitdb.db
+    - gitdb.test
+    - gitdb.utils
 
 about:
   home: https://github.com/gitpython-developers/gitdb
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'A pure-Python git object database'
 
