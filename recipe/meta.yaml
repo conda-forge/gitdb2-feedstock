@@ -23,6 +23,10 @@ requirements:
     - smmap2 >=2.0.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - gitdb
     - gitdb.db
