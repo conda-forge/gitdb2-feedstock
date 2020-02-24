@@ -17,16 +17,19 @@ requirements:
   host:
     - python >=3.4
     - pip
-    - smmap2 >=2.0.0
+    - gitdb >=4
   run:
     - python >=3.4
-    - smmap2 >=2.0.0
+    - gitdb >=4
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - gitdb
     - gitdb.db
-    - gitdb.test
     - gitdb.utils
 
 about:
