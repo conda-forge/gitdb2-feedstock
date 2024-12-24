@@ -5,26 +5,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/gitdb2/gitdb2-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/gitdb2/gitdb2-{{ version }}.tar.gz
   sha256: 0986cb4003de743f2b3aba4c828edd1ab58ce98e1c4a8acf72ef02760d4beb4e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.4
+    - python {{ python_min }}
     - pip
     - gitdb >=4
   run:
-    - python >=3.4
+    - python >={{ python_min }}
     - gitdb >=4
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:
